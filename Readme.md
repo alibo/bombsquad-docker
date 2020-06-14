@@ -8,9 +8,9 @@ An unofficial docker image for server app of [BombSquad Game](https://www.froeml
 
 ```bash
 docker run -d -it \
-           -p 43210:43210/udp \  
+           -p 43210:43210/udp \
            --name bombsquad \
-           -v `pwd`/config.py:/app/bombsquad-server/config.py \ 
+           -v `pwd`/config.py:/app/bombsquad-server/config.py \
            alibo/bombsquad
 ```
 
