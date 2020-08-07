@@ -1,6 +1,6 @@
 ## Dockerized BombSquad Server
 
-![Docker Pulls](https://img.shields.io/docker/pulls/alibo/bombsquad?style=flat-square)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alibo/bombsquad?style=flat-square)](https://hub.docker.com/r/alibo/bombsquad)
 
 An unofficial docker image for server app of [BombSquad Game](https://www.froemling.net/apps/bombsquad)
 
