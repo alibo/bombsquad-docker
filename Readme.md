@@ -12,11 +12,11 @@ An unofficial docker image for server app of [BombSquad Game](https://www.froeml
 docker run -d -it \
            -p 43210:43210/udp \
            --name bombsquad \
-           -v `pwd`/config.py:/app/bombsquad-server/config.py \
+           -v `pwd`/config.yaml:/app/bombsquad-server/config.yaml \
            alibo/bombsquad
 ```
 
-You can use **config.py** in this repo. 
+You can use **config.yaml** in this repo. 
 
 
 
