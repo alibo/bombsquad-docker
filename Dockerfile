@@ -16,7 +16,7 @@ RUN wget https://files.ballistica.net/bombsquad/builds/BombSquad_Server_Linux_${
     tar xzvf bombsquad.tar.gz && \
     mv BombSquad_Server*/ bombsquad-server && \
     rm -f bombsquad.tar.gz && \
-    sed -i 's/\/usr\/bin\/env/\/usr\/bin\/env -S/' /app/bombsquad-server/bombsquad_server
+    /app/bombsquad-server/bombsquad_server
 
 WORKDIR /app/bombsquad-server
 
