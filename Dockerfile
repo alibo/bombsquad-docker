@@ -1,8 +1,8 @@
-FROM debian:bullseye-slim
+FROM ubuntu:20.04
 
 LABEL maintainer="https://github.com/alibo"
 
-ARG BOMBSQUAD_VERSION="1.5.28"
+ARG BOMBSQUAD_VERSION="1.5.29"
 
 
 RUN apt-get -y update && apt-get install -y python3.8 libpython3.8 locales libsdl2-2.0-0 wget && rm -rf /var/lib/apt/lists/* \
