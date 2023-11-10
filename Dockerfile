@@ -14,9 +14,9 @@ ENV LANG en_US.utf8
 WORKDIR /app
 
 RUN wget https://files.ballistica.net/bombsquad/builds/BombSquad_Linux_x86_64_${BOMBSQUAD_VERSION}.tar.gz -O bombsquad.tar.gz && \
-    tar -C bombsquad xzvf bombsquad.tar.gz --strip-components 1 && \
+    tar -xzf bombsquad.tar.gz --strip-components 1 && \
     rm -f bombsquad.tar.gz
 
 EXPOSE 43210/udp
 
-CMD ["/app/bombsquad/bombsquad"]
+CMD ["/app/bombsquad"]
