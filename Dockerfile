@@ -17,7 +17,7 @@ ENV TAR_FILE=BombSquad_Server_Linux_x86_64_${BOMBSQUAD_VERSION}
 
 RUN wget https://files.ballistica.net/bombsquad/builds/$TAR_FILE.tar.gz -O bombsquad.tar.gz && \
     tar -xzf bombsquad.tar.gz --strip-components 1 && \
-    rm -f bombsquad.tar.gz
+    rm -f config.yaml # removing default config file in order to put ourselves
 
 COPY config.yaml .
 
