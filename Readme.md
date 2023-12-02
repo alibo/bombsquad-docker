@@ -1,25 +1,20 @@
-## Dockerized BombSquad Server
+# BombSquad Docker
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/alibo/bombsquad?style=flat-square)](https://hub.docker.com/r/alibo/bombsquad)
 
 An unofficial docker image for server app of [BombSquad Game](https://www.froemling.net/apps/bombsquad)
 
-
-### Usage
-
+## Usage
 
 ```bash
 docker run -d -it \
-           -p 43210:43210/udp \
-           --name bombsquad \
-           -v `pwd`/config.yaml:/app/bombsquad-server/config.yaml \
-           alibo/bombsquad
+    -p 43210:43210/udp \
+    --name bombsquad \
+    ghcr.io/alibo/bombsquad-docker:latest
 ```
 
-You can use **config.yaml** in this repo. 
-
-
+You can use **config.yaml** in this repo.
 
 ### Dockerhub
 
-See: https://hub.docker.com/r/alibo/bombsquad
+See: <https://hub.docker.com/r/alibo/bombsquad>
